@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+}
+
+.header-main .logo-main {
+	width: 775px;
+	margin: 0 auto;
+}
+
+.header-main .logo-main img {
+	width: 100%;
+}
+
+.header-slideshow .slideshow-container .poster {
+	width: 275px;
+}
+
+.header-slideshow .slideshow-container .poster img {
+	width: 100%
+}

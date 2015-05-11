@@ -204,10 +204,11 @@ p {
 
 .nav-bar .logo-header {
 	float: left;
+	width: 200px;
 }
 
 .nav-bar .logo-header img {
-	width: 75%;
+	width: 100%;
 }
 
 .nav-bar .nav-sections {
@@ -273,7 +274,7 @@ p {
 }
 
 /* About */
-.about {
+.about-section {
 	padding-top: 40px;
 }
 
@@ -334,6 +335,10 @@ p {
 	.container {
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	.nav-bar .logo-header {
+		float: left;
+		width: 75px;
 	}
 	.welcome {
 		padding-bottom: 36px;

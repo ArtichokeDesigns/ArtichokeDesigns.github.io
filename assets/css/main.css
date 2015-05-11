@@ -1,5 +1,5 @@
 html {
-    font-family:arial,helvetica,sans-serif;
+    font-family:centurygothic,helvetica,arial,sans-serif;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
@@ -212,7 +212,6 @@ p {
 .nav-bar .nav-sections {
 	float: right;
 	margin-top: 45px;
-	font-family: helvetica,arial,sans-serif;
 	font-size: 2em;
 }
 
@@ -222,6 +221,11 @@ p {
 
 .welcome {
 	padding-bottom: 70px;
+	background: url('../images/artichoke-banner-bw.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .welcome .welcome-logo img {
@@ -242,7 +246,7 @@ p {
 	overflow: hidden;
 	padding: 0 20px 18px;
 	font-size: 4em;
-	color: green
+	color: #7B8E30;
 }
 
 .welcome .welcome-slogan .slogan {
@@ -250,7 +254,6 @@ p {
 }
 
 .welcome .welcome-slogan .slogan h3{
-	font-family: helvetica,arial,sans-serif;
 	font-size: 4em;
 	font-weight: 200;
 }
@@ -262,3 +265,66 @@ p {
 .slideshow .slideshow-container .poster img {
 	width: 100%
 }
+
+.about {
+	padding-top: 40px;
+}
+
+.about-info {
+	display: inline-block;
+	max-width: 500px;
+	padding-right: 36px;
+}
+
+.about-headshots {
+	display: inline-block;
+	max-width: 650px;
+	position: relative;
+}
+
+.about-info .about-title h2 {
+	font-size: 5em;
+	font-weight: bold;
+	color: #7B8E30;
+}
+
+.about-info .about-content {
+	padding-top: 14px;
+}
+.about-info .about-content p {
+	font-size: 2em;
+}
+
+.about-headshots .profile {
+	display: inline-block;
+	width: 300px;
+}
+
+.about-headshots .profile img {
+	width: 100%;
+}
+
+.about-headshots .profile h4 {
+	font-size: 2em;
+	font-weight: 200;
+}
+
+.about-headshots .profile-one {
+	
+}
+
+.about-headshots .profile-one-headshot {
+	width: 80%
+}
+
+.about-headshots .profile-two {
+
+}
+
+.about-headshots .profile-two-headshot {
+	width: 80%;
+}
+
+
+
+

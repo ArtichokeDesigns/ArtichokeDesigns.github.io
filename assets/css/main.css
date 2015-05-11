@@ -338,10 +338,6 @@ p {
 	.welcome {
 		padding-bottom: 36px;
 		background: url('../images/artichoke-banner-bw-mobile.png');
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
 	}
 	.welcome .welcome-slogan .slogan h3{
 		font-size: 2em;

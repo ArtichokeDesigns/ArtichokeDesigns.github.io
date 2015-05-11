@@ -196,6 +196,7 @@ p {
 	margin-right: 70px
 }
 
+/* Navbar */
 .nav-bar {
 	padding-top: 10px;
 	border-bottom: 4px solid green;
@@ -219,12 +220,13 @@ p {
 	padding-left: 40px;
 }
 
+/* Welcome */
 .welcome {
 	padding-bottom: 70px;
 	background: url('../images/artichoke-banner-bw.png');
-	background-position: center;
+	background-position: center center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-size: 100%;
 	background-attachment: fixed;
 }
 
@@ -237,7 +239,6 @@ p {
 
 .welcome .welcome-slogan {
 	text-align: center;
-	width: 600px;
 	margin: 0 auto;
 }
 
@@ -258,6 +259,11 @@ p {
 	font-weight: 200;
 }
 
+/* Slideshow */
+.slideshow {
+	padding-top: 40px;
+}
+
 .slideshow .slideshow-container .poster {
 	width: 275px;
 }
@@ -266,6 +272,7 @@ p {
 	width: 100%
 }
 
+/* About */
 .about {
 	padding-top: 40px;
 }
@@ -273,13 +280,13 @@ p {
 .about-info {
 	display: inline-block;
 	max-width: 500px;
-	padding-right: 36px;
 }
 
 .about-headshots {
 	display: inline-block;
 	max-width: 650px;
 	position: relative;
+	float: right;
 }
 
 .about-info .about-title h2 {
@@ -297,7 +304,9 @@ p {
 
 .about-headshots .profile {
 	display: inline-block;
-	width: 300px;
+	width: 270px;
+	padding-left: 20px;
+	text-align: center;
 }
 
 .about-headshots .profile img {
@@ -309,21 +318,60 @@ p {
 	font-weight: 200;
 }
 
-.about-headshots .profile-one {
-	
+.about-headshots .profile-headshot {
+	padding-bottom: 10px;
 }
 
-.about-headshots .profile-one-headshot {
-	width: 80%
+.about-headshots .profile-one {
+	
 }
 
 .about-headshots .profile-two {
 
 }
 
-.about-headshots .profile-two-headshot {
-	width: 80%;
+@media (max-width: 758px) {
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.welcome {
+		padding-bottom: 36px;
+		background: url('../images/artichoke-banner-bw-mobile.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.welcome .welcome-slogan .slogan h3{
+		font-size: 2em;
+		font-weight: 200;
+	}
+	.welcome .welcome-slogan .circle {
+		display: inline-block;
+		overflow: hidden;
+		padding: 0 20px 10px;
+		font-size: 2em;
+		color: #7B8E30;
+	}
+	.about-info {
+		width: 100%
+	}
+	.about-headshots {
+		text-align: center;
+		padding: 0;
+	}
+	.about-headshots .profile {
+		display: inline-block;
+		width: 270px;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+
 }
+
+
 
 
 

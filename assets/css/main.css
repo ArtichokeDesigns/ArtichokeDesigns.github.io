@@ -356,7 +356,8 @@ p {
 		color: #7B8E30;
 	}
 	.about-info {
-		width: 100%
+		width: 100%;
+		text-align: center;
 	}
 	.about-headshots {
 		text-align: center;

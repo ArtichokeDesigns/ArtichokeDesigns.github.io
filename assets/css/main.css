@@ -225,12 +225,15 @@ p, li {
 	height: 50px;
     background-color: #fff;
     padding-top: 24px;
+    -webkit-transition: height .25s ease-in-out;
+    -moz-transition: height .25s ease-in-out;
+    transition: height .25s ease-in-out;
 }
 
 .nav-bar .logo-header {
 	float: left;
 	width: 200px;
-	background: url("./assets/images/artichoke-small.png");
+	background: url("../assets/images/artichoke-small.png");
 }
 
 .nav-bar .logo-header img {

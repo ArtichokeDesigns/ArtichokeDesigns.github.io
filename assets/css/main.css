@@ -222,8 +222,9 @@ p, li {
 	position: fixed;
 	border-bottom: 4px solid green;
 	width: 100%;
+	height: 50px;
     background-color: #fff;
-    padding: 22px 0;
+    padding-top: 24px;
 }
 
 .nav-bar .logo-header {

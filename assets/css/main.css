@@ -440,6 +440,14 @@ p, li {
 		float: left;
 		width: 75px;
 	}
+	.nav-bar .nav-sections {
+		float: none;
+		font-size: 1.6em;
+		text-align: center;
+	}
+	.nav-bar .nav-sections .section {
+		padding-left: 14px;
+	}
 	.welcome {
 		padding-bottom: 36px;
 		background: url('../images/artichoke-banner-bw-mobile.png');

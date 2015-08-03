@@ -219,13 +219,17 @@ p, li {
 
 /* Navbar */
 .nav-bar {
-	padding-top: 10px;
+	position: fixed;
 	border-bottom: 4px solid green;
+	width: 100%;
+    background-color: #fff;
+    padding: 22px 0;
 }
 
 .nav-bar .logo-header {
 	float: left;
 	width: 200px;
+	background: url("./assets/images/artichoke-small.png");
 }
 
 .nav-bar .logo-header img {
@@ -234,7 +238,6 @@ p, li {
 
 .nav-bar .nav-sections {
 	float: right;
-	margin-top: 45px;
 	font-size: 2em;
 }
 
@@ -244,7 +247,7 @@ p, li {
 
 /* Welcome */
 .welcome {
-	padding-bottom: 70px;
+	padding: 75px 0 70px;
 	background: url('../images/artichoke-banner-bw.png');
 	background-position: center center;
 	background-size: cover;
@@ -309,8 +312,8 @@ p, li {
 
 .about-headshots .profile {
 	display: inline-block;
-	width: 40%;
-	padding-left: 20px;
+	width: 175px;
+	padding: 0 0 20px 20px;
 	text-align: center;
 }
 
@@ -340,6 +343,15 @@ p, li {
 	float: left;
 }
 
+.portfolio-list ul {
+	list-style: none;
+	padding: 0;
+}
+
+.portfolio-list li {
+	padding-bottom: 30px;
+}
+
 .portfolio-thumbs {
 	float: right;
 	width: 47%;
@@ -358,8 +370,8 @@ p, li {
 }
 
 .portfolio-thumbs .thumb {
-	width: 200px;
-	height: 150px;
+	width: 150px;
+	height: 100px;
 	background: black;
 	margin: 10px;
 }
@@ -381,6 +393,7 @@ p, li {
 }
 
 .contact-info li {
+	font-size: 1.6em;
 	padding-bottom: 20px;
 }
 
@@ -396,6 +409,7 @@ p, li {
 .contact-social {
 	width: 47%;
 	float: right;
+	padding-bottom: 75px;
 }
 
 .contact-social .social {
@@ -442,13 +456,45 @@ p, li {
 		text-align: center;
 	}
 	.about-headshots {
-		text-align: center;
-		padding: 0;
+		width: 100%;
+		float: none;
+		padding-top: 30px;
 	}
 	.about-headshots .profile {
-		display: inline-block;
-		text-align: center;
-		padding-top: 20px;
+		width: 200px;
+	}
+	.portfolio-list {
+		float: none;
+		width: 100%
+	}
+	.portfolio-list .col-1 {
+		float: left;
+		width: 47%
+	}
+	.portfolio-list .col-2 {
+		float: right;
+		width: 47%;
+	}
+	.portfolio-thumbs {
+		float: none;
+		width: 100%;
+		padding-top: 30px;
+	}
+	.portfolio-thumbs table {
+		float: none;
+		margin: 0 auto;
+	}
+	.portfolio-thumbs .thumb {
+		width: 125px;
+		height: 100px;
+	}
+	.contact-info {
+		width: 100%;
+		float: none;
+	}
+	.contact-social {
+		width: 100%;
+		float: none;
 	}
 
 

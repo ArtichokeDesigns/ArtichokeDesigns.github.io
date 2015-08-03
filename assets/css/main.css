@@ -201,7 +201,7 @@ p, li {
 }
 
 .section {
-	padding-top: 40px;
+	padding-top: 75px;
 }
 
 .section-title {
@@ -210,9 +210,12 @@ p, li {
 
 .section-title h2 {
 	font-size: 5em;
-	font-weight: bold;
+	font-weight: 100;
 	color: #7B8E30;
 }
+ body a {
+ 	color: #7B8E30;
+ }
 
 /* Navbar */
 .nav-bar {
@@ -294,19 +297,19 @@ p, li {
 /* About */
 .about-info {
 	display: inline-block;
-	max-width: 500px;
+	width: 47%
 }
 
 .about-headshots {
 	display: inline-block;
-	max-width: 650px;
-	position: relative;
+	width: 47%;
+	text-align: center;
 	float: right;
 }
 
 .about-headshots .profile {
 	display: inline-block;
-	width: 270px;
+	width: 40%;
 	padding-left: 20px;
 	text-align: center;
 }
@@ -333,7 +336,80 @@ p, li {
 }
 
 /* Portfolio */
+.portfolio-list {
+	float: left;
+}
 
+.portfolio-thumbs {
+	float: right;
+	width: 47%;
+}
+
+.portfolio-thumbs .left{
+	float: left;
+}
+
+.portfolio-thumbs .right{
+	float: right;
+}
+
+.portfolio-thumbs table{
+	float: right;
+}
+
+.portfolio-thumbs .thumb {
+	width: 200px;
+	height: 150px;
+	background: black;
+	margin: 10px;
+}
+
+/* Contact */
+.contact-info {
+	width: 47%;
+	float: left;
+}
+
+.contact-info p {
+	padding-bottom: 30px;
+}
+
+.contact-info ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.contact-info li {
+	padding-bottom: 20px;
+}
+
+.contact-info li:before {
+	content: "• ";
+	color: #7B8E30;
+}
+
+.contact-logo img {
+	width: 100%;
+}
+
+.contact-social {
+	width: 47%;
+	float: right;
+}
+
+.contact-social .social {
+	text-align: center;
+}
+
+.social-icon {
+	display: inline-block;
+	padding-left: 5%;
+}
+
+.social-icon img {
+	width: 40px;
+}
 
 
 
@@ -371,7 +447,6 @@ p, li {
 	}
 	.about-headshots .profile {
 		display: inline-block;
-		width: 270px;
 		text-align: center;
 		padding-top: 20px;
 	}

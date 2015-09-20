@@ -231,12 +231,17 @@ section.section {
     transition: height .25s ease-in-out;
 }
 
+.nav-bar .section {
+	cursor: pointer;
+}
+
 .nav-bar .logo-header {
 	position: absolute;
 	top: 3px;
 	width: 92px;
 	visibility: hidden;
 	opacity: 0;
+	cursor: pointer;
 	-webkit-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;

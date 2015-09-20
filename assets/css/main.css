@@ -237,6 +237,10 @@ section.section {
     color: #000;
 }
 
+.nav-bar .button {
+	cursor: pointer;
+}
+
 .nav-bar .logo-header {
 	position: absolute;
 	top: 3px;
@@ -249,9 +253,7 @@ section.section {
     transition: all .35s ease-in-out;
 }
 .nav-bar .logo-header.active,
-.nav-bar .nav-menu.active,
-.nav-bar .nav-sections-mini .section.active,
-.nav-bar .nav-menu-close.active {
+.nav-bar .nav-sections-mini .section.active {
 	visibility: visible;
 	opacity: 1;
 }

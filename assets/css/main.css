@@ -221,7 +221,7 @@ p, li {
 /* Navbar */
 .nav-bar {
 	position: fixed;
-	border-bottom: 4px solid green;
+	border-bottom: 4px solid #7B8E30;
 	width: 100%;
 	height: 50px;
     background-color: #fff;
@@ -232,9 +232,25 @@ p, li {
 }
 
 .nav-bar .logo-header {
-	float: left;
-	width: 200px;
-	background: url("../assets/images/artichoke-small.png");
+	position: absolute;
+	top: 3px;
+	width: 92px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+.nav-bar .logo-header.active,
+.nav-bar .nav-menu.active,
+.nav-bar .section-mini.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.nav-bar .nav-sections-mini.active {
+	visibility: visible;
+	height: 15px;
 }
 
 .nav-bar .logo-header img {
@@ -246,8 +262,43 @@ p, li {
 	font-size: 2em;
 }
 
-.nav-bar .nav-sections .section {
+.nav-bar .section {
 	padding-left: 40px;
+}
+
+.nav-bar .nav-menu {
+	display: none;
+	position: absolute;
+    right: 8px;
+    top: 4px;
+    font-size: 36px;
+}
+
+.nav-bar .nav-sections-mini {
+	visibility: hidden;
+	height: 0;
+	margin-top: 40px;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    border-bottom: 1px solid #7B8E30;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.nav-bar .section-mini {
+	padding-right: 24px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.nav-bar .section-mini:last-child {
+	padding-right: 0;
 }
 
 /* Welcome */
@@ -369,7 +420,7 @@ p, li {
 
 .portfolio-thumbs {
 	float: right;
-	width: 47%;
+	width: 340px;
 }
 
 .portfolio-thumbs .left{
@@ -447,17 +498,18 @@ p, li {
 
 @media (max-width: 758px) {
 	.container {
-		margin-left: 10px;
-		margin-right: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-	.nav-bar .logo-header {
-		float: left;
-		width: 75px;
+	.nav-bar {
+		height: 36px;
+    	padding-top: 12px;
 	}
 	.nav-bar .nav-sections {
-		float: none;
-		font-size: 1.6em;
-		text-align: center;
+		display: none;
+	}
+	.nav-bar .nav-menu {
+		display: block;
 	}
 	.nav-bar .nav-sections .section {
 		padding-left: 14px;

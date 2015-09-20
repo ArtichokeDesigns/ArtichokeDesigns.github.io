@@ -243,7 +243,8 @@ p, li {
 }
 .nav-bar .logo-header.active,
 .nav-bar .nav-menu.active,
-.nav-bar .section-mini.active {
+.nav-bar .section-mini.active,
+.nav-bar .nav-menu-close.active {
 	visibility: visible;
 	opacity: 1;
 }
@@ -271,6 +272,17 @@ p, li {
 	position: absolute;
     right: 8px;
     top: 4px;
+    font-size: 36px;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.nav-bar .nav-menu-close {
+	display: none;
+	position: absolute;
+    right: 8px;
+    top: 1px;
     font-size: 36px;
 }
 

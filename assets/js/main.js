@@ -24,17 +24,25 @@ $(document).ready(function(){
 	});
 
     // MINI NAV EVENTS
-    var navMenu = $('.nav-menu');
+    var navMenuButton = $('.nav-menu, .nav-menu-close');
+    var navMenuOpen = $('.nav-menu');
+    var navMenuClose = $('.nav-menu-close');
     var miniSections = $('.nav-sections-mini');
     var miniSection = $('.section-mini');
 
-    navMenu.on('click', function() {
+    navMenuButton.on('click', function() {
         if (miniSections.hasClass('active')) {
+            navMenuClose.fadeOut().promise().done(function() {
+                navMenuOpen.fadeIn();
+            });
             miniSection.removeClass('active');
             setTimeout(function() {
                 miniSections.removeClass('active');
             }, 300);
         } else {
+            navMenuOpen.fadeOut().promise().done(function() {
+                navMenuClose.fadeIn();
+            });
             miniSections.addClass('active');
             setTimeout(function() {
                 miniSection.addClass('active');

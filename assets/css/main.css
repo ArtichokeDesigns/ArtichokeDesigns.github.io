@@ -233,6 +233,8 @@ section.section {
 
 .nav-bar .section {
 	cursor: pointer;
+	text-decoration: none;
+    color: #000;
 }
 
 .nav-bar .logo-header {

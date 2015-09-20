@@ -23,12 +23,12 @@ $(document).ready(function(){
 
 	});
 
-    // MINI NAV EVENTS
+    // NAV EVENTS
     var navMenuButton = $('.nav-menu, .nav-menu-close');
     var navMenuOpen = $('.nav-menu');
     var navMenuClose = $('.nav-menu-close');
     var miniSections = $('.nav-sections-mini');
-    var miniSection = $('.section-mini');
+    var miniSection = $('.nav-sections-mini .section');
 
     navMenuButton.on('click', function() {
         if (miniSections.hasClass('active')) {
@@ -49,4 +49,6 @@ $(document).ready(function(){
             }, 300);
         }
     });
+
+
 });

@@ -57,12 +57,11 @@ $(document).ready(function(){
     $.each(navSections, function(i) {
         $(navSections[i]).on('click', function() {
             secClassName = '.'+this.id+'-section';
-            console.log(secClassName)
             scrollDest = $(secClassName).position().top;
             if ($(window).innerWidth() >= 786) {
-                $(window).scrollTop(scrollDest - 36);
+                $('html, body').animate({ scrollTop: scrollDest - 36 + 'px' });
             } else {
-                $(window).scrollTop(scrollDest - 70);
+                $('html, body').animate({ scrollTop: scrollDest - 70 + 'px' });
             }
         });
     });

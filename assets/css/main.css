@@ -267,23 +267,21 @@ p, li {
 	padding-left: 40px;
 }
 
-.nav-bar .nav-menu {
-	display: none;
-	position: absolute;
-    right: 8px;
-    top: 4px;
-    font-size: 36px;
-    -webkit-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
-}
-
+.nav-bar .nav-menu,
 .nav-bar .nav-menu-close {
 	display: none;
 	position: absolute;
     right: 8px;
-    top: 1px;
-    font-size: 36px;
+}
+
+.nav-bar .nav-menu {
+	top: 1px;
+	font-size: 36px;
+}
+
+.nav-bar .nav-menu-close {
+	top: 5px;
+    font-size: 30px;
 }
 
 .nav-bar .nav-sections-mini {

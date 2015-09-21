@@ -447,6 +447,36 @@ section.section {
 	padding-top: 30px;
 }
 
+.print-design .content-featured .content {
+	width: 47%;
+}
+
+.fan-art .content-featured {
+	text-align: center;
+}
+
+.fan-art .content-featured .content {
+	width: 20%;
+	display: inline-block;
+	padding-right: 68px;
+}
+
+.fan-art .content-featured .content:last-child {
+	padding-right: 0;
+}
+
+.content-featured .content img {
+	width: 100%;
+}
+
+.content-featured .left {
+	float: left;
+}
+
+.content-featured .right {
+	float: right;
+}
+
 /*.portfolio-list {
 	float: left;
 }

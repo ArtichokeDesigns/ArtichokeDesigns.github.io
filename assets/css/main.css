@@ -670,6 +670,13 @@ section.section {
 }
 .modal-body {
   padding: 20px;
+  text-align: center;
+}
+.modal-body img {
+	width: 100%
+}
+.modal-body img.portrait {
+	width: 40%
 }
 .modal-header,
 .modal-footer {

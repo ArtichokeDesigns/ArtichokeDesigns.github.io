@@ -429,7 +429,6 @@ section.section {
 }
 
 .portfolio-section .sub-sec {
-	/*min-height: 600px;*/
     padding: 40px 0 30px;
     border-bottom: 1px solid #7B8E30;
 }
@@ -484,7 +483,9 @@ section.section {
 	float: right;
 }
 
-.print-design .content-thumbs .content {
+.print-design .content-thumbs .content,
+.stationary .content-thumbs .content,
+.logos .content-thumbs .content {
 	display: inline-block;
     width: 15%;
     padding-right: 1%;
@@ -497,43 +498,6 @@ section.section {
 .content-thumbs .content img {
 	width: 100%;
 }
-
-/*.portfolio-list {
-	float: left;
-}
-
-.portfolio-list ul {
-	list-style: none;
-	padding: 0;
-}
-
-.portfolio-list li {
-	padding-bottom: 30px;
-}
-
-.portfolio-thumbs {
-	float: right;
-	width: 340px;
-}
-
-.portfolio-thumbs .left{
-	float: left;
-}
-
-.portfolio-thumbs .right{
-	float: right;
-}
-
-.portfolio-thumbs table{
-	float: right;
-}
-
-.portfolio-thumbs .thumb {
-	width: 150px;
-	height: 100px;
-	background: black;
-	margin: 10px;
-}*/
 
 /* Contact */
 .contact-section {
@@ -727,9 +691,21 @@ section.section {
 		font-size: 2em;
 		color: #7B8E30;
 	}
+	.section-title h2 {
+		font-size: 3.6em;
+	}
+	.sub-sec-title h3 {
+		font-size: 2.4em;
+		font-weight: 100;
+	}
+	.portfolio-section .section-title {
+	    padding: 0;
+	}
+	.portfolio-section .sub-sec {
+	    padding: 20px 0 20px;
+	}
 	.about-info {
 		width: 100%;
-		text-align: center;
 	}
 	.about-headshots {
 		width: 100%;
@@ -743,31 +719,6 @@ section.section {
 	.fan-art .content-featured .content {
 		padding-right: 10px;
 	}
-	/*.portfolio-list {
-		float: none;
-		width: 100%
-	}
-	.portfolio-list .col-1 {
-		float: left;
-		width: 47%
-	}
-	.portfolio-list .col-2 {
-		float: right;
-		width: 47%;
-	}
-	.portfolio-thumbs {
-		float: none;
-		width: 100%;
-		padding-top: 30px;
-	}
-	.portfolio-thumbs table {
-		float: none;
-		margin: 0 auto;
-	}
-	.portfolio-thumbs .thumb {
-		width: 125px;
-		height: 100px;
-	}*/
 	.contact-info {
 		width: 100%;
 		float: none;
@@ -776,7 +727,6 @@ section.section {
 		width: 100%;
 		float: none;
 	}
-
 	.modal-dialog {
 	  margin-left: -150px;
 	  left: 50%;

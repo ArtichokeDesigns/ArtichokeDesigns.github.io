@@ -74,16 +74,13 @@ $(document).ready(function(){
     });
 
     // POSTERS
-    // comicPosterThumbs = postersJSON.posters.comicPosterThumbs;
-    // var comicThumbContainer = $('.fan-art .content-thumbs');
-    // $.each(comicPosterThumbs, function(k, v) {
-    //     comicThumbContainer.append('<div class="content"><a href=""><img src="' + v.posterSrc +'" alt="content"></a></div>');
-    // });
-
-    comicPosterThumbs = postersJSON.posters.comicPosterThumbs;
+    comicPosterThumbs = postersJSON.posters.comicPosters;
     var comicThumbContainer = $('.fan-art .content-thumbs');
+    var comicThumbModals = $('.fan-art .modals');
     $.each(comicPosterThumbs, function(k, v) {
-        comicThumbContainer.append('<div class="content"><a href=""><img src="' + v.posterSrc +'" alt="content"></a></div>');
+        comicThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
+        comicThumbModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>')
+        
     });
 
 

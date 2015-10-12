@@ -1,47 +1,75 @@
 var postersJSON = {
 	"posters": {
-		"comicPosterThumbs": [
+		"comicPosters": [
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/batman-thumb.jpg"
+				"name": "batman",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/batman-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/batman.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/cap-thumb.jpg"
+				"name": "cap",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/cap-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/cap.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/hulk-thumb.jpg"
+				"name": "hulk",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/hulk-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/hulk.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/ironman-thumb.jpg"
+				"name": "ironman",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/ironman-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/ironman.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/joker-thumb.jpg"
+				"name": "joker",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/joker-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/joker.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/groupspace-thumb.jpg"
+				"name": "groupspace",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/groupspace-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/groupspace.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/babygroot-thumb.jpg"
+				"name": "babygroot",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/babygroot-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/babygroot.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/drax-thumb.jpg"
+				"name": "drax",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/drax-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/drax.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/gamora-thumb.jpg"
+				"name": "gamora",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/gamora-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/gamora.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/groot-thumb.jpg"
+				"name": "groot",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/groot-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/groot.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/rocket-thumb.jpg"
+				"name": "rocket",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/rocket-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/rocket.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/thanos-thumb.jpg"
+				"name": "thanos",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/thanos-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/thanos.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/walkingdead-thumb.jpg"
+				"name": "walkingdead",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/walkingdead-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/walkingdead.jpg"
 			},
 			{
-				"posterSrc": "./assets/images/portfolio-images/posters/darylcarol-thumb.jpg"
+				"name": "darylcarol",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/darylcarol-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/darylcarol.jpg"
 			},
 		]
 	}

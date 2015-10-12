@@ -233,6 +233,7 @@ body a {
     -webkit-transition: height .25s ease-in-out;
     -moz-transition: height .25s ease-in-out;
     transition: height .25s ease-in-out;
+    z-index: 20;
 }
 
 .nav-bar .section {
@@ -460,7 +461,7 @@ body a {
 	text-align: center;
 	background: #ccc;
 	margin-top: 40px;
-    padding: 10px;
+    padding: 10px 48px;
 }
 
 .fan-art .content-featured .content {
@@ -474,7 +475,6 @@ body a {
 }
 
 .fan-art .content-thumbs .content {
-	width: 150px;
 	display: inline-block;
 	padding-right: 1%;
 }
@@ -565,6 +565,49 @@ body a {
 
 .social-icon img {
 	width: 40px;
+}
+
+/* Slideshow */
+.sub-sec .content-thumbs button {
+	background-color: #fff;
+	border-radius: 10px;
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.sub-sec .content-thumbs button:hover {
+	background-color: #333;
+}
+
+.sub-sec .content-thumbs button.slick-prev {
+	left: 10px;
+}
+
+.sub-sec .content-thumbs button.slick-next {
+	right: 10px;
+}
+
+.content-thumbs button.slick-prev:before,
+.content-thumbs button.slick-next:before {
+	opacity: 1;
+	color: #7B8E30;
+	font-weight: 800;
+	font-size: 14px;
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.content-thumbs button.slick-prev:before {
+	content: "<";
+	padding-right: 2px;
+
+}
+
+.content-thumbs button.slick-next:before {
+	content: ">";
+	padding-left: 2px;
 }
 
 /* Modal */

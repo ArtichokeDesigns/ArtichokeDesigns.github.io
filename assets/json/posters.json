@@ -1,0 +1,28 @@
+{
+	"posters": [
+		{
+			"posterSrc": "../images/posters/batman-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/babygroot-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/blackswan-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/burnafter-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/cap-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/darylcarol-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/deadpoets-thumb.jpeg"
+		},
+		{
+			"posterSrc": "../images/posters/drax-thumb.jpeg"
+		},
+	]
+}

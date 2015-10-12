@@ -66,10 +66,16 @@ $(document).ready(function(){
         });
     });
 
+    // MODALS
     $('.modal').on('click', function() {
         thumbPosition = $(this).position().top;
         reposition = thumbPosition - $(window).height();
         $('html, body').animate({ scrollTop: reposition + 36 + 'px' });    
+    });
+
+    // SLIDESHOWS
+    $.getJSON('../json/posters.json', function(json) {
+        console.log(json);
     })
 
 

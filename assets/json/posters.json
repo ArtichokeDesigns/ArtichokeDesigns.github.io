@@ -76,6 +76,78 @@ var postersJSON = {
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/darylcarol-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/darylcarol.jpg"
 			},
+		],
+		"moviePosters": [
+			{
+				"name": "jurassic",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/jurassic-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/jurassic.jpg"
+			},
+			{
+				"name": "kingsman",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/kingsman-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/kingsman.jpg"
+			},
+			{
+				"name": "blackswan",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/blackswan-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/blackswan.jpg"
+			},
+			{
+				"name": "burnafter",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/burnafter-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/burnafter.jpg"
+			},
+			{
+				"name": "deadpoets",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/deadpoets-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/deadpoets.jpg"
+			},
+			{
+				"name": "fargo",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/fargo-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/fargo.jpg"
+			},
+			{
+				"name": "gravity",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/gravity-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/gravity.jpg"
+			},
+			{
+				"name": "halloween",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/halloween-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/halloween.jpg"
+			},
+			{
+				"name": "jason",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/jason-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/jason.jpg"
+			},
+			{
+				"name": "killbill",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/killbill-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/killbill.jpg"
+			},
+			{
+				"name": "obrother",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/obrother-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/obrother.jpg"
+			},
+			{
+				"name": "spongebob",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/spongebob-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/spongebob.jpg"
+			},
+			{
+				"name": "terminator2",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/terminator2-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/terminator2.jpg"
+			},
+			{
+				"name": "wolf",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/wolf-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/wolf.jpg"
+			},
 		]
 	}
 	

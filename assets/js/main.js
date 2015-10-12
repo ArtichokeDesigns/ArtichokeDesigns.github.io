@@ -105,11 +105,20 @@ $(document).ready(function(){
 
     // POSTERS
     var comicPosters = postersJSON.posters.comicPosters;
-    var comicThumbContainer = $('.fan-art .content-thumbs');
-    var comicPosterModals = $('.fan-art .modals');
+    var comicThumbContainer = $('.fan-art .content-thumbs.comics');
+    var posterModals = $('.fan-art .modals');
     $.each(comicPosters, function(k, v) {
         comicThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
-        comicPosterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        
+    });
+
+    var moviePosters = postersJSON.posters.moviePosters;
+    console.log(moviePosters)
+    var movieThumbContainer = $('.fan-art .content-thumbs.movies');
+    $.each(moviePosters, function(k, v) {
+        movieThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
         
     });
 

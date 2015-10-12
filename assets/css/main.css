@@ -790,5 +790,10 @@ body a {
 	  left: 50%;
 	  width: 300px;
 	}
+	.fan-art .modal-dialog {
+	  margin-left: -150px;
+	  left: 50%;
+	  width: 300px;
+	}
 }
 

@@ -440,8 +440,13 @@ body a {
     border-bottom: none;
 }
 
-.sub-sec-title h3 {
+.sub-sec h3 {
 	font-size: 3em;
+	font-weight: 100;
+}
+
+.sub-sec h4 {
+	font-size: 2.4em;
 	font-weight: 100;
 }
 
@@ -462,6 +467,18 @@ body a {
 	background: #ccc;
 	margin-top: 40px;
     padding: 10px 48px;
+}
+
+.sub-sub-sec {
+	margin-top: 40px;
+}
+
+.sub-sub-title {
+	margin-bottom: 10px;
+}
+
+.sub-sec.fan-art .content-thumbs {
+	margin-top: 0;
 }
 
 .fan-art .content-featured .content {

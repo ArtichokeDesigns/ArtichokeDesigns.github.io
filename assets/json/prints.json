@@ -1,0 +1,46 @@
+var printsJSON = {
+	"prints": {
+		"items": [
+			{
+				"name": "antheia",
+				"thumbSrc": "./assets/images/portfolio-images/prints/antheia.jpg",
+				"src": "./assets/images/portfolio-images/prints/antheia-orig.jpg"
+			},
+			{
+				"name": "com-ed",
+				"thumbSrc": "./assets/images/portfolio-images/prints/ComEd.jpg",
+				"src": "./assets/images/portfolio-images/prints/ComEd-orig.jpg"
+			},
+			{
+				"name": "eltoro1",
+				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro1.jpg",
+				"src": "./assets/images/portfolio-images/prints/eltoro1-orig.jpg"
+			},
+			{
+				"name": "eltoro2",
+				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro2.jpg",
+				"src": "./assets/images/portfolio-images/prints/eltoro2-orig.jpg"
+			},
+			{
+				"name": "thirteen",
+				"thumbSrc": "./assets/images/portfolio-images/prints/thirteen.jpg",
+				"src": "./assets/images/portfolio-images/prints/thirteen-orig.jpg"
+			},
+			{
+				"name": "jesse",
+				"thumbSrc": "./assets/images/portfolio-images/prints/jesse.jpg",
+				"src": "./assets/images/portfolio-images/prints/jesse-orig.jpg"
+			},
+			{
+				"name": "timidroosevelts",
+				"thumbSrc": "./assets/images/portfolio-images/prints/timidroosevelts.jpg",
+				"src": "./assets/images/portfolio-images/prints/timidroosevelts-orig.jpg"
+			},
+			{
+				"name": "transparent",
+				"thumbSrc": "./assets/images/portfolio-images/prints/transparent.jpg",
+				"src": "./assets/images/portfolio-images/prints/transparent-orig1.jpg"
+			},
+		]
+	}	
+}

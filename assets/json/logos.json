@@ -1,0 +1,16 @@
+var logosJSON = {
+	"logos": {
+		"items": [
+			{
+				"name": "investview",
+				"thumbSrc": "./assets/images/portfolio-images/logos/investview.jpg",
+				"src": "./assets/images/portfolio-images/logos/investview.jpg"
+			},
+			{
+				"name": "princeton",
+				"thumbSrc": "./assets/images/portfolio-images/logos/princeton.jpg",
+				"src": "./assets/images/portfolio-images/logos/princeton.jpg"
+			},
+		]
+	}	
+}

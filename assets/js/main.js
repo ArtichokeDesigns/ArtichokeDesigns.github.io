@@ -73,13 +73,43 @@ $(document).ready(function(){
         $('html, body').animate({ scrollTop: reposition + 36 + 'px' });    
     });
 
+    // STATIONARY
+    var stationary = stationaryJSON.stationary.items;
+    var stationaryThumbContainer = $('.stationary .content-thumbs');
+    var stationaryModals = $('.stationary .modals');
+    $.each(stationary, function(k, v) {
+        stationaryThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
+        stationaryModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        
+    });
+
+    // LOGOS
+    var logos = logosJSON.logos.items;
+    var logosThumbContainer = $('.logos .content-thumbs');
+    var logoModals = $('.logos .modals');
+    $.each(logos, function(k, v) {
+        logosThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
+        logoModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        
+    });
+
+    // PRINTS
+    var prints = printsJSON.prints.items;
+    var printsThumbContainer = $('.print-design .content-thumbs');
+    var printModals = $('.print-design .modals');
+    $.each(prints, function(k, v) {
+        printsThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
+        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        
+    });
+
     // POSTERS
-    comicPosterThumbs = postersJSON.posters.comicPosters;
+    var comicPosters = postersJSON.posters.comicPosters;
     var comicThumbContainer = $('.fan-art .content-thumbs');
-    var comicThumbModals = $('.fan-art .modals');
-    $.each(comicPosterThumbs, function(k, v) {
+    var comicPosterModals = $('.fan-art .modals');
+    $.each(comicPosters, function(k, v) {
         comicThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
-        comicThumbModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>')
+        comicPosterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
         
     });
 

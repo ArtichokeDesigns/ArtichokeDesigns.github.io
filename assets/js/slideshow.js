@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.fan-art .content-thumbs').slick({
+  $('.fan-art .content-thumbs, .print-design .content-thumbs').slick({
 	infinite: false,
 	speed: 300,
 	slidesToShow: 5,

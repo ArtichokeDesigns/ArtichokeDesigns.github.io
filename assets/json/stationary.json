@@ -1,0 +1,32 @@
+var stationaryJSON = {
+	"stationary": {
+		"items": [
+			{
+				"name": "graduation",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/graduation.jpg",
+				"src": "./assets/images/portfolio-images/stationary/graduation.jpg"
+			},
+			{
+				"name": "rsvp",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/rsvp.jpg",
+				"src": "./assets/images/portfolio-images/stationary/rsvp.jpg"
+			},
+			{
+				"name": "thankyou",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/thankyou.jpg",
+				"src": "./assets/images/portfolio-images/stationary/thankyou.jpg"
+			},
+			{
+				"name": "wedding",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding.jpg",
+				"src": "./assets/images/portfolio-images/stationary/wedding.jpg"
+			},
+			{
+				"name": "wedding2",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding2.jpg",
+				"src": "./assets/images/portfolio-images/stationary/wedding2.jpg"
+			},
+		]
+	}
+	
+}

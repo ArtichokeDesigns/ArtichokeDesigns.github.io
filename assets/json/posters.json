@@ -22,6 +22,11 @@ var postersJSON = {
 				"posterSrc": "./assets/images/portfolio-images/posters/ironman.jpg"
 			},
 			{
+				"name": "thor",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/thor-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/thor.jpg"
+			},
+			{
 				"name": "joker",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/joker-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/joker.jpg"

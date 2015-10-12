@@ -729,26 +729,6 @@ section.section {
 	.about-headshots .profile {
 		width: 200px;
 		float: none;
-<<<<<<< HEAD
-	}
-	.fan-art .content-featured .content {
-		padding-right: 10px;
-	}
-	.contact-info {
-		width: 100%;
-		float: none;
-	}
-	.contact-social {
-		width: 100%;
-		float: none;
-	}
-	.modal-dialog {
-	  margin-left: -150px;
-	  left: 50%;
-	  width: 300px;
-	}
-}
-=======
 	}
 	.fan-art .content-featured .content {
 		padding-right: 10px;
@@ -768,9 +748,3 @@ section.section {
 	}
 }
 
-
-
-
-
-
->>>>>>> a4ca84a6e84269a8fd3220c35533607f9fbf8f79

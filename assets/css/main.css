@@ -562,6 +562,7 @@ body a {
 	width: 75%;
 }
 
+/* Social */
 .contact-social {
 	width: 47%;
 	float: right;
@@ -572,16 +573,88 @@ body a {
 	text-align: center;
 }
 
-.social-icon {
-	display: inline-block;
+.social-icon,
+.contact-social .social a {
+	display: inline-block;	
+}
+
+.contact-social .social a {
 	padding-left: 5%;
 }
-.social-icon:first-child {
+
+.contact-social .social a:first-child {
 	padding-left: 0;
 }
 
-.social-icon img {
+.social .etsy {
+	background: url("../images/social/etsy.jpg");
 	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .facebook {
+	background: url("../images/social/facebook.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .instagram {
+	background: url("../images/social/Instagram.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .twitter {
+	background: url("../images/social/Twitter.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .pinterest {
+	background: url("../images/social/Pinterest.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .etsy:hover {
+	background: url("../images/social/Etsy-down.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .facebook:hover {
+	background: url("../images/social/facebook-down.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .instagram:hover {
+	background: url("../images/social/Instagram-down.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .twitter:hover {
+	background: url("../images/social/Twitter-down.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.social .pinterest:hover {
+	background: url("../images/social/Pinterest-down.jpg");
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
 }
 
 /* Slideshow */

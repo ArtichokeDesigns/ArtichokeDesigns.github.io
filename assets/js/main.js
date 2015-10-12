@@ -74,7 +74,7 @@ $(document).ready(function(){
     });
 
     // SLIDESHOWS
-    $.getJSON('../json/posters.json', function(json) {
+    $.getJSON('../assets/json/posters.json', function(json) {
         console.log(json);
     })
 

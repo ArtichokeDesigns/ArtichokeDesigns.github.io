@@ -73,10 +73,19 @@ $(document).ready(function(){
         $('html, body').animate({ scrollTop: reposition + 36 + 'px' });    
     });
 
-    // SLIDESHOWS
-    $.getJSON('../assets/json/posters.json', function(json) {
-        console.log(json);
-    })
+    // POSTERS
+    // comicPosterThumbs = postersJSON.posters.comicPosterThumbs;
+    // var comicThumbContainer = $('.fan-art .content-thumbs');
+    // $.each(comicPosterThumbs, function(k, v) {
+    //     comicThumbContainer.append('<div class="content"><a href=""><img src="' + v.posterSrc +'" alt="content"></a></div>');
+    // });
+
+    comicPosterThumbs = postersJSON.posters.comicPosterThumbs;
+    var comicThumbContainer = $('.fan-art .content-thumbs');
+    $.each(comicPosterThumbs, function(k, v) {
+        comicThumbContainer.append('<div class="content"><a href=""><img src="' + v.posterSrc +'" alt="content"></a></div>');
+    });
+
 
 
 });

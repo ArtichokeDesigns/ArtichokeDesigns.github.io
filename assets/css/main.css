@@ -203,23 +203,11 @@ p, li {
 section.section {
 	padding-top: 30px;
     padding-bottom: 50px;
-<<<<<<< HEAD
-=======
 }
 
-.section-title {
-	padding-bottom: 14px;
-}
-
-.section-title h2 {
-	font-size: 5em;
-	font-weight: 100;
+body a {
 	color: #7B8E30;
->>>>>>> a4ca84a6e84269a8fd3220c35533607f9fbf8f79
 }
- body a {
- 	color: #7B8E30;
- }
 
 .section-title {
 	padding-bottom: 14px;

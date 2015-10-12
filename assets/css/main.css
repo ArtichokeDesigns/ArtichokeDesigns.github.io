@@ -473,6 +473,12 @@ body a {
 	padding-right: 0;
 }
 
+.fan-art .content-thumbs .content {
+	width: 150px;
+	display: inline-block;
+	padding-right: 1%;
+}
+
 .content-featured .content img {
 	width: 100%;
 }

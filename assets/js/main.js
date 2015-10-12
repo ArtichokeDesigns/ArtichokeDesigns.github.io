@@ -66,5 +66,11 @@ $(document).ready(function(){
         });
     });
 
+    $('.modal').on('click', function() {
+        thumbPosition = $(this).position().top;
+        reposition = thumbPosition - $(window).height();
+        $('html, body').animate({ scrollTop: reposition + 36 + 'px' });    
+    })
+
 
 });

@@ -126,7 +126,11 @@ $(document).ready(function(){
         posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
         
     });
-
-
-
 });
+
+var populateMediaThumbs = function(array, container, modals) {
+    $.each(array, function(k, v) {
+        container.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
+        modals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');  
+    });
+}

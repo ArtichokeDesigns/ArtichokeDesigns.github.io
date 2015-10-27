@@ -714,7 +714,6 @@ body a {
   min-width: 60px;
   position: relative;
   transition: color .1s ease;
-  /* top: 40em;*/
 }
 .btn:hover {
   background: #357ebd;

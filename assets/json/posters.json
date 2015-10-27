@@ -2,6 +2,11 @@ var postersJSON = {
 	"posters": {
 		"comicPosters": [
 			{
+				"name": "arrow",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/arrow-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/arrow.jpg"
+			},
+			{
 				"name": "batman",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/batman-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/batman.jpg"
@@ -10,6 +15,11 @@ var postersJSON = {
 				"name": "cap",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/cap-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/cap.jpg"
+			},
+			{
+				"name": "flash",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/flash-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/flash.jpg"
 			},
 			{
 				"name": "hulk",
@@ -25,11 +35,6 @@ var postersJSON = {
 				"name": "thor",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/thor-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/thor.jpg"
-			},
-			{
-				"name": "joker",
-				"posterThumbSrc": "./assets/images/portfolio-images/posters/joker-thumb.jpg",
-				"posterSrc": "./assets/images/portfolio-images/posters/joker.jpg"
 			},
 			{
 				"name": "groupspace",
@@ -75,7 +80,7 @@ var postersJSON = {
 				"name": "darylcarol",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/darylcarol-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/darylcarol.jpg"
-			},
+			}
 		],
 		"moviePosters": [
 			{
@@ -147,7 +152,29 @@ var postersJSON = {
 				"name": "wolf",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/wolf-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/wolf.jpg"
+			}
+		],
+		"featuredPosters": [
+			{
+				"name": "starlord",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/starlord-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/starlord.jpg"
 			},
+			{
+				"name": "joker",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/joker-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/joker.jpg"
+			},
+			{
+				"name": "wintersoldier",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/wintersoldier-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/wintersoldier.jpg"
+			},
+			{
+				"name": "mumford",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/mumford-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/mumford.jpg"
+			}
 		]
 	}
 	

@@ -104,6 +104,12 @@ $(document).ready(function(){
     });
 
     // POSTERS
+    var featuredPosters = postersJSON.posters.featuredPosters;
+    var featuredPostersContainer = $('.fan-art .content-featured');
+    $.each(featuredPosters, function(k, v) {
+        featuredPostersContainer.append('<div class="content"><img src="'+v.posterSrc+'" alt="content"></div>');     
+    });
+
     var comicPosters = postersJSON.posters.comicPosters;
     var comicThumbContainer = $('.fan-art .content-thumbs.comics');
     var posterModals = $('.fan-art .modals');
@@ -114,7 +120,6 @@ $(document).ready(function(){
     });
 
     var moviePosters = postersJSON.posters.moviePosters;
-    console.log(moviePosters)
     var movieThumbContainer = $('.fan-art .content-thumbs.movies');
     $.each(moviePosters, function(k, v) {
         movieThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');

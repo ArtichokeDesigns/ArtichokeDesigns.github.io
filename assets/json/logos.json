@@ -2,14 +2,29 @@ var logosJSON = {
 	"logos": {
 		"items": [
 			{
+				"name": "auxillary",
+				"thumbSrc": "./assets/images/portfolio-images/logos/auxillary-thumb.jpg",
+				"src": "./assets/images/portfolio-images/logos/auxillary.jpg"
+			},
+			{
+				"name": "blackjack",
+				"thumbSrc": "./assets/images/portfolio-images/logos/blackjack-thumb.jpg",
+				"src": "./assets/images/portfolio-images/logos/blackjack.jpg"
+			},
+			{
 				"name": "investview",
-				"thumbSrc": "./assets/images/portfolio-images/logos/investview.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/logos/investview-thumb.jpg",
 				"src": "./assets/images/portfolio-images/logos/investview.jpg"
 			},
 			{
 				"name": "princeton",
-				"thumbSrc": "./assets/images/portfolio-images/logos/princeton.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/logos/princeton-thumb.jpg",
 				"src": "./assets/images/portfolio-images/logos/princeton.jpg"
+			},
+			{
+				"name": "StandUp",
+				"thumbSrc": "./assets/images/portfolio-images/logos/StandUp-thumb.jpg",
+				"src": "./assets/images/portfolio-images/logos/StandUp.jpg"
 			},
 		]
 	}	

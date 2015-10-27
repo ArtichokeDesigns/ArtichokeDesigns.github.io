@@ -3,27 +3,27 @@ var stationaryJSON = {
 		"items": [
 			{
 				"name": "graduation",
-				"thumbSrc": "./assets/images/portfolio-images/stationary/graduation.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/graduation-thumb.jpg",
 				"src": "./assets/images/portfolio-images/stationary/graduation.jpg"
 			},
 			{
 				"name": "rsvp",
-				"thumbSrc": "./assets/images/portfolio-images/stationary/rsvp.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/rsvp-thumb.jpg",
 				"src": "./assets/images/portfolio-images/stationary/rsvp.jpg"
 			},
 			{
 				"name": "thankyou",
-				"thumbSrc": "./assets/images/portfolio-images/stationary/thankyou.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/thankyou-thumb.jpg",
 				"src": "./assets/images/portfolio-images/stationary/thankyou.jpg"
 			},
 			{
 				"name": "wedding",
-				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding-thumb.jpg",
 				"src": "./assets/images/portfolio-images/stationary/wedding.jpg"
 			},
 			{
 				"name": "wedding2",
-				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding2.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/stationary/wedding2-thumb.jpg",
 				"src": "./assets/images/portfolio-images/stationary/wedding2.jpg"
 			},
 		]

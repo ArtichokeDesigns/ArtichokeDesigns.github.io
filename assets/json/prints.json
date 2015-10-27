@@ -3,43 +3,43 @@ var printsJSON = {
 		"items": [
 			{
 				"name": "antheia",
-				"thumbSrc": "./assets/images/portfolio-images/prints/antheia.jpg",
+				"thumbSrc": "./assets/images/portfolio-images/prints/antheia-thumb.jpg",
 				"src": "./assets/images/portfolio-images/prints/antheia-orig.jpg"
 			},
 			{
 				"name": "com-ed",
-				"thumbSrc": "./assets/images/portfolio-images/prints/ComEd.jpg",
-				"src": "./assets/images/portfolio-images/prints/ComEd-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/ComEd-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/comed.jpg"
 			},
 			{
 				"name": "eltoro1",
-				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro1.jpg",
-				"src": "./assets/images/portfolio-images/prints/eltoro1-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro1-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/eltoro1.jpg"
 			},
 			{
 				"name": "eltoro2",
-				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro2.jpg",
-				"src": "./assets/images/portfolio-images/prints/eltoro2-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro2-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/eltoro2.jpg"
 			},
 			{
 				"name": "thirteen",
-				"thumbSrc": "./assets/images/portfolio-images/prints/thirteen.jpg",
-				"src": "./assets/images/portfolio-images/prints/thirteen-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/thirteen-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/thirteen.jpg"
 			},
 			{
 				"name": "jesse",
-				"thumbSrc": "./assets/images/portfolio-images/prints/jesse.jpg",
-				"src": "./assets/images/portfolio-images/prints/jesse-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/jesse-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/jesse.jpg"
 			},
 			{
 				"name": "timidroosevelts",
-				"thumbSrc": "./assets/images/portfolio-images/prints/timidroosevelts.jpg",
-				"src": "./assets/images/portfolio-images/prints/timidroosevelts-orig.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/timidroosevelts-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/timidroosevelts.jpg"
 			},
 			{
 				"name": "transparent",
-				"thumbSrc": "./assets/images/portfolio-images/prints/transparent.jpg",
-				"src": "./assets/images/portfolio-images/prints/transparent-orig1.jpg"
+				"thumbSrc": "./assets/images/portfolio-images/prints/transparent-thumb.jpg",
+				"src": "./assets/images/portfolio-images/prints/transparent.jpg"
 			},
 		]
 	}	

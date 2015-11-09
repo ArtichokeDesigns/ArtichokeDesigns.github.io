@@ -853,28 +853,14 @@ button.close {
     width: 900px;
   }
 }
-.modal-body {
-  padding: 20px;
-  text-align: center;
-}
 .modal-body img {
 	width: 100%
-}
-.modal-body img.portrait {
-	width: 40%
 }
 .modal-header,
 .modal-footer {
   padding: 10px 20px;
 }
-.modal-header h2 {
-  font-size: 20px;
-}
-.modal-dialog.portrait {
-  margin-left: -150px;
-  left: 50%;
-  width: 300px;
-}
+
 
 @media (max-width: 758px) {
 	.container {
@@ -951,6 +937,11 @@ button.close {
 	.contact-social {
 		width: 100%;
 		float: none;
+	}
+	.modal-dialog.portrait {
+	  margin-left: -150px;
+	  left: 50%;
+	  width: 300px;
 	}
 }
 

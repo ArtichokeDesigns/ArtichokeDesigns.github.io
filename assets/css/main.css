@@ -494,6 +494,7 @@ body a {
 .fan-art .content-thumbs .content {
 	display: inline-block;
 	padding-right: 1%;
+	cursor: pointer;
 }
 
 .content-featured .content img {
@@ -862,7 +863,7 @@ button.close {
 }
 
 
-@media (max-width: 758px) {
+@media (max-width: 768px) {
 	.container {
 		padding-left: 10px;
 		padding-right: 10px;

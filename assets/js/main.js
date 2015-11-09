@@ -67,12 +67,13 @@ $(document).ready(function(){
     });
 
     // MODALS
-    $('.modal').on('click', function() {
-        // thumbPosition = $(this).position().top;
-        // reposition = thumbPosition - $(window).height();
-        // $('html, body').animate({ scrollTop: reposition + 36 + 'px' });
-
-    });
+    // $('.fan-art .content-thumbs .content').on('click', function() {
+    //     var comicPosters = postersJSON.posters.comicPosters;
+    //     var moviePosters = postersJSON.posters.moviePosters;
+    //     imgName = $(this).attr('data-target');
+    //     imgSrc = "./assets/images/portfolio-images/posters/"+imgName+".jpg";
+    //     $('body').append('<div class="modal in" id="'+imgName+'" aria-hidden="false" tabindex="-1" role="dialog" style="display: block; padding-left: 0px;"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+imgSrc+'" alt="content"></div></div></div></div></div>');
+    // });
 
     // STATIONARY
     var stationary = stationaryJSON.stationary.items;

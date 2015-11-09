@@ -130,7 +130,12 @@ $(document).ready(function(){
     var movieThumbContainer = $('.fan-art .content-thumbs.movies');
     $.each(moviePosters, function(k, v) {
         movieThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        if (v.landscape) {
+            posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        } else {
+            posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        }
+        
         
     });
 });

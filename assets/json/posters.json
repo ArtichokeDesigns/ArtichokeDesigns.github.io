@@ -151,7 +151,8 @@ var postersJSON = {
 			{
 				"name": "wolf",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/wolf-thumb.jpg",
-				"posterSrc": "./assets/images/portfolio-images/posters/wolf.jpg"
+				"posterSrc": "./assets/images/portfolio-images/posters/wolf.jpg",
+				"landscape": "true"
 			}
 		],
 		"featuredPosters": [

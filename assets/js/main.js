@@ -68,9 +68,10 @@ $(document).ready(function(){
 
     // MODALS
     $('.modal').on('click', function() {
-        thumbPosition = $(this).position().top;
-        reposition = thumbPosition - $(window).height();
-        $('html, body').animate({ scrollTop: reposition + 36 + 'px' });    
+        // thumbPosition = $(this).position().top;
+        // reposition = thumbPosition - $(window).height();
+        // $('html, body').animate({ scrollTop: reposition + 36 + 'px' });
+
     });
 
     // STATIONARY
@@ -78,8 +79,8 @@ $(document).ready(function(){
     var stationaryThumbContainer = $('.stationary .content-thumbs');
     var stationaryModals = $('.stationary .modals');
     $.each(stationary, function(k, v) {
-        stationaryThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
-        stationaryModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        stationaryThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
+        stationaryModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
         
     });
 
@@ -88,8 +89,8 @@ $(document).ready(function(){
     var logosThumbContainer = $('.logos .content-thumbs');
     var logoModals = $('.logos .modals');
     $.each(logos, function(k, v) {
-        logosThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
-        logoModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        logosThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
+        logoModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
         
     });
 
@@ -98,8 +99,8 @@ $(document).ready(function(){
     var printsThumbContainer = $('.print-design .content-thumbs');
     var printModals = $('.print-design .modals');
     $.each(prints, function(k, v) {
-        printsThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></a></div>');
-        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        printsThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
+        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
         
     });
 
@@ -114,16 +115,16 @@ $(document).ready(function(){
     var comicThumbContainer = $('.fan-art .content-thumbs.comics');
     var posterModals = $('.fan-art .modals');
     $.each(comicPosters, function(k, v) {
-        comicThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        comicThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
         
     });
 
     var moviePosters = postersJSON.posters.moviePosters;
     var movieThumbContainer = $('.fan-art .content-thumbs.movies');
     $.each(moviePosters, function(k, v) {
-        movieThumbContainer.append('<div class="content"><a href="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></a></div>');
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true"><div class="modal-dialog"><div class="modal-header"><a href="#close" class="btn-close" aria-hidden="true">×</a></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"></div></div></div></div>');
+        movieThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
         
     });
 });

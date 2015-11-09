@@ -14,12 +14,14 @@ var printsJSON = {
 			{
 				"name": "eltoro1",
 				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro1-thumb.jpg",
-				"src": "./assets/images/portfolio-images/prints/eltoro1.jpg"
+				"src": "./assets/images/portfolio-images/prints/eltoro1.jpg",
+				"portrait": "true"
 			},
 			{
 				"name": "eltoro2",
 				"thumbSrc": "./assets/images/portfolio-images/prints/eltoro2-thumb.jpg",
-				"src": "./assets/images/portfolio-images/prints/eltoro2.jpg"
+				"src": "./assets/images/portfolio-images/prints/eltoro2.jpg",
+				"portrait": "true"
 			},
 			{
 				"name": "thirteen",

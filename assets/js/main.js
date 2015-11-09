@@ -100,7 +100,12 @@ $(document).ready(function(){
     var printModals = $('.print-design .modals');
     $.each(prints, function(k, v) {
         printsThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
-        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
+        if (v.portrait) {
+            printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
+        } else {
+            printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
+        }
+        
         
     });
 
@@ -116,7 +121,7 @@ $(document).ready(function(){
     var posterModals = $('.fan-art .modals');
     $.each(comicPosters, function(k, v) {
         comicThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
         
     });
 
@@ -124,7 +129,7 @@ $(document).ready(function(){
     var movieThumbContainer = $('.fan-art .content-thumbs.movies');
     $.each(moviePosters, function(k, v) {
         movieThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
         
     });
 });

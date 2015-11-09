@@ -837,7 +837,7 @@ button.close {
     width: 600px;
     margin: 30px auto;
   }
-  .fan-art .modal-dialog {
+  .modal-dialog.portrait {
 	width: 430px;
   }
   .modal-content {
@@ -853,13 +853,6 @@ button.close {
     width: 900px;
   }
 }
-/*.fan-art .modal-dialog {
-    margin-left: -187.5px;
-    width: 375px;
-}
-.fan-art .modal:target .modal-dialog {
-  top: 10%;
-}*/
 .modal-body {
   padding: 20px;
   text-align: center;
@@ -876,6 +869,11 @@ button.close {
 }
 .modal-header h2 {
   font-size: 20px;
+}
+.modal-dialog.portrait {
+  margin-left: -150px;
+  left: 50%;
+  width: 300px;
 }
 
 @media (max-width: 758px) {
@@ -953,16 +951,6 @@ button.close {
 	.contact-social {
 		width: 100%;
 		float: none;
-	}
-	.modal-dialog {
-	  margin-left: -150px;
-	  left: 50%;
-	  width: 300px;
-	}
-	.fan-art .modal-dialog {
-	  margin-left: -150px;
-	  left: 50%;
-	  width: 300px;
 	}
 }
 

@@ -9,7 +9,7 @@ var printsJSON = {
 			{
 				"name": "com-ed",
 				"thumbSrc": "./assets/images/portfolio-images/prints/ComEd-thumb.jpg",
-				"src": "./assets/images/portfolio-images/prints/comed.jpg"
+				"src": "./assets/images/portfolio-images/prints/ComEd.jpg"
 			},
 			{
 				"name": "eltoro1",

@@ -839,7 +839,7 @@ button.close {
     margin: 30px auto;
   }
   .modal-dialog.portrait {
-	width: 430px;
+	width: 408px;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);

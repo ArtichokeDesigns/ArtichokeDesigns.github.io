@@ -67,6 +67,11 @@ var postersJSON = {
 				"posterSrc": "./assets/images/portfolio-images/posters/rocket.jpg"
 			},
 			{
+				"name": "starlord",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/starlord-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/starlord.jpg"
+			},
+			{
 				"name": "thanos",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/thanos-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/thanos.jpg"
@@ -83,6 +88,11 @@ var postersJSON = {
 			}
 		],
 		"moviePosters": [
+			{
+				"name": "forceawakens",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/forceawakens-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/forceawakens.jpg"
+			},
 			{
 				"name": "jurassic",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/jurassic-thumb.jpg",
@@ -157,9 +167,9 @@ var postersJSON = {
 		],
 		"featuredPosters": [
 			{
-				"name": "starlord",
-				"posterThumbSrc": "./assets/images/portfolio-images/posters/starlord-thumb.jpg",
-				"posterSrc": "./assets/images/portfolio-images/posters/starlord.jpg"
+				"name": "snakeeater",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/snakeeater-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/snakeeater.jpg"
 			},
 			{
 				"name": "joker",

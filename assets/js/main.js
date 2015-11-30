@@ -137,12 +137,19 @@ $.each(moviePosters, function(k, v) {
     }  
 });
 
+// FEATURED POSTER POSITIONING
 var featuredPosterObjs = $('.fan-art .content-featured .content');
-for (i=0; i < featuredPosterObjs.length; i++) {
-    if (i % 2 == 0) {
-        $(featuredPosterObjs[i]).css('float', 'left');
-    } else {
-        $(featuredPosterObjs[i]).css('float', 'right');
+if (innerWidth > 768) {
+    for (i=0; i < featuredPosterObjs.length; i++) {
+        $(featuredPosterObjs[i]).css('float', 'none');
+    } 
+} else {
+    for (i=0; i < featuredPosterObjs.length; i++) {
+        if (i % 2 == 0) {
+            $(featuredPosterObjs[i]).css('float', 'left');
+        } else {
+            $(featuredPosterObjs[i]).css('float', 'right');
+        }
     }
 }
 

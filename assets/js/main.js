@@ -80,8 +80,7 @@ var stationaryThumbContainer = $('.stationary .content-thumbs');
 var stationaryModals = $('.stationary .modals');
 $.each(stationary, function(k, v) {
     stationaryThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
-    stationaryModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
-    
+    stationaryModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.src+'" alt="content"></div></div></div></div></div>');    
 });
 
 // LOGOS
@@ -90,8 +89,7 @@ var logosThumbContainer = $('.logos .content-thumbs');
 var logoModals = $('.logos .modals');
 $.each(logos, function(k, v) {
     logosThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
-    logoModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
-    
+    logoModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.src+'" alt="content"></div></div></div></div></div>');    
 });
 
 // PRINTS
@@ -101,12 +99,10 @@ var printModals = $('.print-design .modals');
 $.each(prints, function(k, v) {
     printsThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.thumbSrc+'" alt="content"></div>');
     if (v.portrait) {
-        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
+        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.src+'" alt="content"></div></div></div></div></div>');
     } else {
-        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.src+'" alt="content"></div></div></div></div></div>');
-    }
-    
-    
+        printModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.src+'" alt="content"></div></div></div></div></div>');
+    }   
 });
 
 // POSTERS
@@ -115,15 +111,14 @@ var featuredPostersContainer = $('.fan-art .content-featured');
 var posterModals = $('.fan-art .modals');
 $.each(featuredPosters, function(k, v) {
     featuredPostersContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterSrc+'" alt="content"></div>');
-    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');     
+    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');     
 });
 
 var comicPosters = postersJSON.posters.comicPosters;
 var comicThumbContainer = $('.fan-art .content-thumbs.comics');
 $.each(comicPosters, function(k, v) {
     comicThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
-    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
-    
+    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');  
 });
 
 var moviePosters = postersJSON.posters.moviePosters;
@@ -131,11 +126,26 @@ var movieThumbContainer = $('.fan-art .content-thumbs.movies');
 $.each(moviePosters, function(k, v) {
     movieThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
     if (v.landscape) {
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
     } else {
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
     }  
 });
+
+// LAZY LOADING
+var allThumbs = $('.content-thumbs .content');
+var modalDataTarget;
+var modalImg;
+var modalContainer;
+for (i=0; i < allThumbs.length; i++) {
+    modalDataTarget = $(allThumbs[i]).attr('data-target');
+    modalImgObj = $(modalDataTarget+'.modal');
+    $(allThumbs[i]).on("shown.bs.modal", function(){
+        modalImgObj.lazyload({
+            container:$(modalDataTarget)
+        });
+    });
+}
 
 // FEATURED POSTER POSITIONING
 var featuredPosterObjs = $('.fan-art .content-featured .content');

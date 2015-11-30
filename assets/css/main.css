@@ -817,6 +817,22 @@ button.close {
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
+.modal-footer .buy-button {
+	float: right;
+    background: #7B8E30;
+    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.modal-footer .buy-button:hover {
+    background: #333;
+}
 .modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
@@ -840,7 +856,7 @@ button.close {
     margin: 30px auto;
   }
   .modal-dialog.portrait {
-	width: 408px;
+	width: 364px;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);

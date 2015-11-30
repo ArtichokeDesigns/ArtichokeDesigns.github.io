@@ -2,6 +2,11 @@ var postersJSON = {
 	"posters": {
 		"comicPosters": [
 			{
+				"name": "agentcarter",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/agentcarter-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/agentcarter.jpg"
+			},
+			{
 				"name": "arrow",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/arrow-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/arrow.jpg"
@@ -88,6 +93,11 @@ var postersJSON = {
 			}
 		],
 		"moviePosters": [
+			{
+				"name": "acrosstheuniverse",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/acrosstheuniverse-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/acrosstheuniverse.jpg"
+			},
 			{
 				"name": "forceawakens",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/forceawakens-thumb.jpg",

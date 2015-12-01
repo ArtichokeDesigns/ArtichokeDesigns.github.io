@@ -111,14 +111,14 @@ var featuredPostersContainer = $('.fan-art .content-featured');
 var posterModals = $('.fan-art .modals');
 $.each(featuredPosters, function(k, v) {
     featuredPostersContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterSrc+'" alt="content"></div>');
-    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');     
+    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'" target="_blank"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');     
 });
 
 var comicPosters = postersJSON.posters.comicPosters;
 var comicThumbContainer = $('.fan-art .content-thumbs.comics');
 $.each(comicPosters, function(k, v) {
     comicThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
-    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');  
+    posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'" target="_blank"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');  
 });
 
 var moviePosters = postersJSON.posters.moviePosters;
@@ -126,11 +126,11 @@ var movieThumbContainer = $('.fan-art .content-thumbs.movies');
 $.each(moviePosters, function(k, v) {
     movieThumbContainer.append('<div class="content" data-toggle="modal" data-target="#'+v.name+'"><img src="'+v.posterThumbSrc+'" alt="content"></div>');
     if (v.landscape) {
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'" target="_blank"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');
     } else if (v.buyLink == "na") {
         posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div></div></div></div></div>');
     } else {
-        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');
+        posterModals.append('<div class="modal" id="'+v.name+'" aria-hidden="true" tabindex="-1" role="dialog"><div class="modal-dialog portrait" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><img class="lazy" src="'+v.posterSrc+'" alt="content"></div><div class="modal-footer"><a href="'+v.buyLink+'" target="_blank"><div class="buy-button"><span>Buy Now</span></div></a></div></div></div></div></div>');
     }  
 });
 

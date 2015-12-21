@@ -1,6 +1,7 @@
 // HEADER TRANSFORMER FUNCTION
 var welcomeHeight = $('.welcome').height();
-var navSections = $('.nav-sections .section');
+var navSections = $('.nav-bar .section');
+var navSectionsFull = $('.nav-sections .section');
 
 $(window).scroll(function() {
     var portfolioSecPosition = $('.portfolio-section').position().top - 50,
@@ -29,23 +30,23 @@ $(window).scroll(function() {
     }
 
     if (scroll >= portfolioSecPosition && scroll <= aboutSecPosition) {
-        $.each(navSections, function(i) {
-            $(navSections[i]).removeClass('active');
+        $.each(navSectionsFull, function(i) {
+            $(navSectionsFull[i]).removeClass('active');
         });
         $('#portfolio').addClass('active');
     } else if (scroll >= aboutSecPosition && scroll <= contactSecPosition) {
-        $.each(navSections, function(i) {
-            $(navSections[i]).removeClass('active');
+        $.each(navSectionsFull, function(i) {
+            $(navSectionsFull[i]).removeClass('active');
         });
         $('#about').addClass('active');
     } else if (scroll >= contactSecPosition) {
-        $.each(navSections, function(i) {
-            $(navSections[i]).removeClass('active');
+        $.each(navSectionsFull, function(i) {
+            $(navSectionsFull[i]).removeClass('active');
         });
         $('#contact').addClass('active');
     } else {
-        $.each(navSections, function(i) {
-            $(navSections[i]).removeClass('active');
+        $.each(navSectionsFull, function(i) {
+            $(navSectionsFull[i]).removeClass('active');
         });
     }
 });
@@ -79,8 +80,8 @@ navMenuButton.on('click', function() {
 
 navSections.hover(
     function() {
-        $.each(navSections, function(i) {
-            $(navSections[i]).removeClass('active');
+        $.each(navSectionsFull, function(i) {
+            $(navSectionsFull[i]).removeClass('active');
         });
         $(this).addClass('active');
     },

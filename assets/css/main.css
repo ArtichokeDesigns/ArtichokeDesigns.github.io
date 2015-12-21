@@ -228,24 +228,21 @@ body a {
 	border-bottom: 4px solid #7B8E30;
 	width: 100%;
 	height: 50px;
-    background-color: #fff;
-    padding-top: 24px;
-    -webkit-transition: height .25s ease-in-out;
-    -moz-transition: height .25s ease-in-out;
-    transition: height .25s ease-in-out;
-    z-index: 20;
+  background-color: #fff;
+  padding-top: 24px;
+  -webkit-transition: height .25s ease-in-out;
+  -moz-transition: height .25s ease-in-out;
+  transition: height .25s ease-in-out;
+  z-index: 20;
 }
-
 .nav-bar .section {
 	cursor: pointer;
 	text-decoration: none;
     color: #000;
 }
-
 .nav-bar .button {
 	cursor: pointer;
 }
-
 .nav-bar .logo-header {
 	position: absolute;
 	top: 3px;
@@ -254,50 +251,51 @@ body a {
 	opacity: 0;
 	cursor: pointer;
 	-webkit-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 .nav-bar .logo-header.active,
 .nav-bar .nav-sections-mini .section.active {
 	visibility: visible;
 	opacity: 1;
 }
-
 .nav-bar .nav-sections-mini.active {
 	visibility: visible;
 	height: 15px;
 }
-
 .nav-bar .logo-header img {
 	width: 100%;
 }
-
 .nav-bar .nav-sections {
 	float: right;
 	font-size: 2em;
 }
-
 .nav-bar .nav-sections .section {
-	padding-left: 40px;
+	padding: 27px 20px;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
-
+.nav-bar .nav-sections .section.active {
+  background: #ccc;
+}
+.nav-bar .nav-sections.mini .section {
+  padding: 13px 20px;
+}
 .nav-bar .nav-menu,
 .nav-bar .nav-menu-close {
 	display: none;
 	position: absolute;
   right: 8px;
 }
-
 .nav-bar .nav-menu {
 	top: 1px;
 	font-size: 36px;
 }
-
 .nav-bar .nav-menu-close {
 	top: 5px;
   font-size: 30px;
 }
-
 .nav-bar .nav-sections-mini {
 	visibility: hidden;
 	height: 0;
@@ -311,7 +309,6 @@ body a {
   -moz-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
-
 .nav-bar .nav-sections-mini .section {
 	padding-right: 24px;
 	visibility: hidden;
@@ -320,7 +317,6 @@ body a {
   -moz-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
-
 .nav-bar .nav-sections-mini .section:last-child {
 	padding-right: 0;
 }

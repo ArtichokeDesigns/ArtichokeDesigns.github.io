@@ -1,6 +1,6 @@
 // HEADER TRANSFORMER FUNCTION
 var welcomeHeight = $('.welcome').height();
-var navSections = $('.nav-bar .section');
+var navSections = $('.nav-sections .section');
 
 $(window).scroll(function() {
     var portfolioSecPosition = $('.portfolio-section').position().top - 50,

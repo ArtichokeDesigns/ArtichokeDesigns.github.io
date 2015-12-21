@@ -29,25 +29,23 @@ $(window).scroll(function() {
         $('.nav-sections').removeClass('mini');  
     }
 
-    if (scroll >= portfolioSecPosition && scroll <= aboutSecPosition) {
-        $.each(navSectionsFull, function(i) {
-            $(navSectionsFull[i]).removeClass('active');
+    var sectionLoopAndRemove = function(array) {
+        $.each(array, function(i) {
+            $(array[i]).removeClass('active');
         });
+    }
+
+    if (scroll >= portfolioSecPosition && scroll <= aboutSecPosition) {
+        sectionLoopAndRemove(navSectionsFull);
         $('#portfolio').addClass('active');
     } else if (scroll >= aboutSecPosition && scroll <= contactSecPosition) {
-        $.each(navSectionsFull, function(i) {
-            $(navSectionsFull[i]).removeClass('active');
-        });
+        sectionLoopAndRemove(navSectionsFull);
         $('#about').addClass('active');
     } else if (scroll >= contactSecPosition) {
-        $.each(navSectionsFull, function(i) {
-            $(navSectionsFull[i]).removeClass('active');
-        });
+        sectionLoopAndRemove(navSectionsFull);
         $('#contact').addClass('active');
     } else {
-        $.each(navSectionsFull, function(i) {
-            $(navSectionsFull[i]).removeClass('active');
-        });
+        sectionLoopAndRemove(navSectionsFull);
     }
 });
 
@@ -78,7 +76,7 @@ navMenuButton.on('click', function() {
     }
 });
 
-navSections.hover(
+navSectionsFull.hover(
     function() {
         $.each(navSectionsFull, function(i) {
             $(navSectionsFull[i]).removeClass('active');
@@ -89,7 +87,7 @@ navSections.hover(
         var secName = $(this).attr('id');
         var secClassName = secName+'-section';
         var scroll = $(window).scrollTop();
-        if(scroll < $(secClassName).position().top) {
+        if(scroll < $('.'+secClassName).position().top) {
             $(this).removeClass('active');
         }      
     }

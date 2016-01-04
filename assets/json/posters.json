@@ -118,6 +118,12 @@ var postersJSON = {
 				"buyLink": "https://www.etsy.com/listing/256429049/star-wars-the-force-awakens-inspired?ref=shop_home_active_7"
 			},
 			{
+				"name": "reybb8",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/ReyBB8-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/ReyBB8.jpg",
+				"buyLink": "https://www.google.com/url?q=https%3A%2F%2Fwww.etsy.com%2Flisting%2F261374932%2Fstar-wars-the-force-awakens-inspired%3Fref%3Dshop_home_active_2&sa=D&sntz=1&usg=AFQjCNE3C_B71z3cetqolYNFkVgxBHs7Rg"
+			},
+			{
 				"name": "acrosstheuniverse",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/acrosstheuniverse-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/acrosstheuniverse.jpg",

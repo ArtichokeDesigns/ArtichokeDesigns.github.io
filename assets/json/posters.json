@@ -2,6 +2,18 @@ var postersJSON = {
 	"posters": {
 		"comicPosters": [
 			{
+				"name": "jessicajones",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/jessicajones-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/jessicajones.jpg",
+				"buyLink": "https://www.etsy.com/listing/265805532/marvels-jessica-jones-inspired-poster?ref=shop_home_feat_4"
+			},
+			{
+				"name": "balalaika",
+				"posterThumbSrc": "./assets/images/portfolio-images/posters/balalaika-thumb.jpg",
+				"posterSrc": "./assets/images/portfolio-images/posters/balalaika.jpg",
+				"buyLink": "https://www.etsy.com/listing/265587345/black-lagoon-balalaika-inspired-poster?ref=shop_home_active_6"
+			},
+			{
 				"name": "agentcarter",
 				"posterThumbSrc": "./assets/images/portfolio-images/posters/agentcarter-thumb.jpg",
 				"posterSrc": "./assets/images/portfolio-images/posters/agentcarter.jpg",

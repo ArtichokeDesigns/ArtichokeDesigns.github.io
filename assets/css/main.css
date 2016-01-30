@@ -3,7 +3,6 @@ html {
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
-
 body {
     margin:0;
     font-weight:300;
@@ -463,7 +462,7 @@ body a {
 .fan-art .content-featured .content:last-child {
 	padding-right: 0;
 }
-.fan-art .content-thumbs .content {
+.content-thumbs .content {
 	display: inline-block;
 	padding-right: 1%;
 	cursor: pointer;

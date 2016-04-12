@@ -178,7 +178,9 @@ $.each(moviePosters, function(k, v) {
 });
 
 // LAZY LOADING
-$("img").unveil();
+$(document).ready(function(){
+    $("img").unveil(500);
+});
 
 // FEATURED POSTER POSITIONING
 var featuredPosterObjs = $('.fan-art .content-featured .content');

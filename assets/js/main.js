@@ -179,7 +179,9 @@ $.each(moviePosters, function(k, v) {
 
 // LAZY LOADING
 $(document).ready(function(){
-    $("img").unveil(500);
+    setTimeout(function() {
+        $("img").unveil(500);
+    },500);  
 });
 
 // FEATURED POSTER POSITIONING

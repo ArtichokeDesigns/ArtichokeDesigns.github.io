@@ -2,6 +2,11 @@ var logosJSON = {
 	"logos": {
 		"items": [
 			{
+				"name": "arthro",
+				"thumbSrc": "./assets/images/portfolio-images/logos/arthro-thumb.png",
+				"src": "./assets/images/portfolio-images/logos/arthro.png"
+			},
+			{
 				"name": "auxillary",
 				"thumbSrc": "./assets/images/portfolio-images/logos/auxillary-thumb.jpg",
 				"src": "./assets/images/portfolio-images/logos/auxillary.jpg"
